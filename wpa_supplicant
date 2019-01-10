@@ -1,0 +1,23 @@
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+
+
+network={
+	ssid="CEC-BYOD"
+	priority=1
+	proto=RSN
+	key_mgmt=WPA-EAP
+	pairwise=CCMP
+	auth_alg=OPEN
+	eap=PEAP
+	identity="hberker19"
+	password=hash:d89b4a010b8aac2f060c4dce77c14350
+	phase1="peaplabel=0"
+	phase2="auth=MSCHAPV2"
+}
+network={
+	ssid="iphone"
+	psk="password123"
+	key_mgmt=WPA-PSK
+}
