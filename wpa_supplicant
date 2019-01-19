@@ -12,7 +12,7 @@ network={
 	auth_alg=OPEN
 	eap=PEAP
 	identity="hberker19"
-	password=hash:d89b4a010b8aac2f060c4dce77c14350
+	password=
 	phase1="peaplabel=0"
 	phase2="auth=MSCHAPV2"
 }
